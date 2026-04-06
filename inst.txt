@@ -1,0 +1,4 @@
+installera paketen som behövs
+npm i
+
+Köra appen npm run dev
