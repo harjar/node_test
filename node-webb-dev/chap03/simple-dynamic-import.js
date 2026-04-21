@@ -7,3 +7,5 @@ async function simpleFn() {
     console.log(`Meaning: ${simple2.meaning}`);
 }
 simpleFn().catch(err => { console.error(err); });
+
+// run node simple-dynamic-import-fail.js
