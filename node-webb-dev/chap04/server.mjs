@@ -1,3 +1,6 @@
+// sidan 144
+
+import { sniffOn } from '../events/httpsniffer.mjs';
 import * as http from 'http';
 import * as util from 'util';
 import * as os from 'os';
@@ -16,6 +19,7 @@ server.on('request', (req, res) => {
     }
 });
 server.listen(new URL(listenOn).port);
+sniffOn(server);
 console.log(`listening to ${listenOn}`);
 function homePage(req, res) {
     res.writeHead(200, { 'Content-Type': 'text/html' });
